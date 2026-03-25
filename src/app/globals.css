@@ -138,8 +138,9 @@ h1 {
 
 .watch_list {
   display: flex;
+  justify-content: center;
   gap: 2rem;
-  cursor: pointer;
+  margin-right: 4rem;
 }
 
 .watch_card {
@@ -154,7 +155,7 @@ h1 {
 
 .watch_bg {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   bottom: 0;
   width: 100%;
   height: 70%;
@@ -162,10 +163,7 @@ h1 {
 }
 
 .watch-img {
-  position: relative;
-  z-index: 2;
-  width: 70px;
-  transform: translateY(8px);
+  display: block;
 }
 
 .watch_bg.navy {
