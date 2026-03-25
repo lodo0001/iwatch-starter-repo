@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: linear-gradient(#c8dce5, #b6ccda);
   --foreground: #171717;
 }
 
@@ -19,8 +19,205 @@
   }
 }
 
+/* * {
+  outline: 1px solid red;
+} */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/Poppins/Poppins-Regular.ttf");
+}
+
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins";
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#c8dce5, #b6ccda);
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr
+    [content-start] min(1200px, 100%)
+    [content-end] 1fr
+    [full-end];
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Css til header */
+header {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: inherit;
+  padding: 40px 0;
+  cursor: pointer;
+}
+
+header nav {
+  grid-column: content-start / content-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 550;
+  color: white;
+}
+
+.Iwatch_btn {
+  color: #b6ccda;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px 28px;
+}
+
+/* main*/
+main {
+  grid-column: content-start / content-end;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Overskrift og større img */
+.H1AndImg {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+  color: white;
+  line-height: 120%;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+/* knappen */
+
+.BuyNow_btn {
+  margin-top: -20rem;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-size: larger;
+  color: white;
+}
+
+/* nederst */
+.nederst {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nederst p {
+  font-size: 1.3rem;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.watch_list {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.watch_card {
+  position: relative;
+  z-index: 0;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch_bg {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  border-radius: 16px;
+}
+
+.watch-img {
+  position: relative;
+  z-index: 2;
+  width: 70px;
+  transform: translateY(8px);
+}
+
+.watch_bg.navy {
+  background-color: rgba(67, 69, 88, 0.6);
+  border-radius: 0.75rem;
+}
+.watch_bg.mint {
+  background-color: rgba(106, 221, 204, 0.6);
+  border-radius: 0.75rem;
+}
+.watch_bg.ocean {
+  background-color: rgba(93, 175, 222, 0.6);
+  border-radius: 0.75rem;
+}
+
+/* css til dots */
+.dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+.navy_dot {
+  background-color: #434558;
+  height: 40px;
+  width: 40px;
+  border: 4px solid white;
+  box-shadow: #0000005d 0px 3px 4px 0px;
+}
+
+.mint_dot {
+  background-color: #6addcc;
+}
+
+.ocean_dot {
+  background-color: #d0dce2;
+}
+
+.dot_small {
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: white;
 }
