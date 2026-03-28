@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Nederst = () => {
+const Nederst = ({ activeWatchImage, setActiveWatchImage }) => {
   return (
     <div className="nederst">
       <p>← 1 →</p>
@@ -13,6 +13,7 @@ const Nederst = () => {
             height={100}
             alt="Apple logo"
             className="watch_img"
+            onClick={() => setActiveWatchImage("/navy.png")}
           />
         </div>
         <div className="watch_card">
@@ -23,6 +24,7 @@ const Nederst = () => {
             height={100}
             alt="Apple logo"
             className="watch_img"
+            onClick={() => setActiveWatchImage("/mint (1).png")}
           />
         </div>
         <div className="watch_card">
@@ -33,6 +35,7 @@ const Nederst = () => {
             height={100}
             alt="Apple logo"
             className="watch_img"
+            onClick={() => setActiveWatchImage("/ocean.png")}
           />
         </div>
       </div>
