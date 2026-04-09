@@ -1,7 +1,7 @@
 const Heading = () => {
   return (
-    <h1>
-      <span className="bold">The Perfect Moment</span> <br />
+    <h1 className="text-6xl text-white">
+      <span className="font-extrabold">The Perfect Moment</span> <br />
       Between Past And <br /> Future.
     </h1>
   );

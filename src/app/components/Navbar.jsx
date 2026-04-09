@@ -3,15 +3,17 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <header>
-      <nav>
+    <header className="font-xl py-6 text-white">
+      <nav className="flex cursor-pointer items-center justify-between py-6">
         <FaApple size={60} />
-        <ul>
+        <ul className="text-m flex items-center gap-18 font-medium">
           <li>Mac</li>
           <li>iPhone</li>
           <li>iPad</li>
           <li>
-            <button className="Iwatch_btn">iWatch</button>
+            <button className="rounded-2xl bg-white px-6 py-1 text-[#b6ccda]">
+              iWatch
+            </button>
           </li>
           <li>Support</li>
         </ul>
