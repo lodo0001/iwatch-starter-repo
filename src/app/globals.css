@@ -28,7 +28,7 @@
   src: url("/Poppins/Poppins-Regular.ttf");
 }
 
-body {
+/* body {
   color: var(--foreground);
   font-family: "Poppins";
 
@@ -50,10 +50,10 @@ body {
 
   width: 100%;
   margin: 0 auto;
-}
+} */
 
 /* Css til header */
-header {
+/* header {
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: inherit;
@@ -84,35 +84,35 @@ header nav ul {
   background-color: white;
   border-radius: 20px;
   padding: 2px 28px;
-}
+} */
 
 /* main*/
-main {
+/* main {
   grid-column: content-start / content-end;
   flex-direction: column;
   gap: 60px;
-}
+} */
 
 /* Overskrift og større img */
-.H1AndImg {
+/* .H1AndImg {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   align-items: center;
-}
+} */
 
-h1 {
+/* h1 {
   font-size: 60px;
   color: white;
   line-height: 120%;
-}
+} */
 
-.bold {
+/* .bold {
   font-weight: 900;
-}
+} */
 
 /* knappen */
-
+/* 
 .BuyNow_btn {
   margin-top: -20rem;
   border: 2px solid white;
@@ -121,10 +121,10 @@ h1 {
   cursor: pointer;
   font-size: larger;
   color: white;
-}
+} */
 
 /* nederst */
-.nederst {
+/* .nederst {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,9 +156,9 @@ h1 {
 
 .watch_card:hover {
   transform: scale(0.9);
-}
+} */
 
-.watch_bg {
+/* .watch_bg {
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -183,10 +183,10 @@ h1 {
 .watch_bg.ocean {
   background-color: rgba(93, 175, 222, 0.6);
   border-radius: 0.75rem;
-}
+} */
 
 /* css til dots */
-.dots {
+/* .dots {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,12 +216,12 @@ h1 {
 
 .ocean_dot {
   background-color: #d0dce2;
-}
+} */
 
-.dot_small {
+/* .dot_small {
   display: inline-block;
   height: 4px;
   width: 4px;
   border-radius: 50%;
   background-color: white;
-}
+} */
